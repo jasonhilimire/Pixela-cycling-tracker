@@ -42,7 +42,8 @@ def get_date(date: str ):
         date_string = now.strftime("%Y%m%d")
         return date_string
     elif date == 'n':
-        date = input("Enter date in yyyyMMdd: ").lower()
+        shortdate = input("Enter date in MMdd: ").lower()
+        date = f"2022{shortdate}"
         return date
 
 
